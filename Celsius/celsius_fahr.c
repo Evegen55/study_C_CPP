@@ -4,26 +4,10 @@
  * and open the template in the editor.
  */
 
-/* 
- * File:   main.c
- * Author: Evgenii_Lartcev
- *
- * Created on November 16, 2016, 12:10 PM
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * 
- */
 int main(int argc, char** argv) {
-    printf("Hello World\n\n");
-    celsius();
-    return (EXIT_SUCCESS);
-}
-
-int celsius () {
     int fahr, celsius;
     int lower, upper, step;
     
@@ -39,5 +23,5 @@ int celsius () {
         fahr = fahr + step;
     }
     
-    return 0;
+    return (EXIT_SUCCESS);
 }
