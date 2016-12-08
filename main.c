@@ -13,13 +13,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    printf("Hello World\n\n");
-    celsius();
+    /*printf("Hello World\n\n");*/
+    /*celsius();*/
+    read_from_input2();
     return (EXIT_SUCCESS);
 }
 
@@ -39,5 +41,22 @@ int celsius () {
         fahr = fahr + step;
     }
     
+    return 0;
+}
+
+
+int read_from_input1(void){
+    int a, b;
+    int r = scanf ("%d%d", &a, &b);
+    assert (r == 2);
+    printf ("%d\n", a + b);
+    return 0;
+}
+
+int read_from_input2(void){
+    double a, b;
+    int r = scanf ("%lg%lg", &a, &b);
+    assert (r == 2);
+    printf ("%lg\n", a + b);    
     return 0;
 }
